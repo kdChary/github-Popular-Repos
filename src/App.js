@@ -1,7 +1,7 @@
 import './App.css'
 
-import LanguageFilterItem from './components/LanguageFilterItem'
+import GithubPopularRepos from './components/GithubPopularRepos'
 
-const App = () => <LanguageFilterItem />
+const App = () => <GithubPopularRepos />
 
 export default App

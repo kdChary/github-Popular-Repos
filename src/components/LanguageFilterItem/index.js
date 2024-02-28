@@ -1,21 +1,17 @@
 import './index.css'
 
 const LanguageFilterItem = props => {
-  const {repoDetails, isSame, filterRepositories} = props
-  const {id, language} = repoDetails
-  const changeClass = isSame ? 'selected' : 'not-selected'
+  const {headerList, isActive, onChangeActiveTabId} = props
+  const {id, language} = headerList
+  const headerActive = isActive ? 'color item' : 'item'
 
-  const onClickedFilterItem = () => {
-    filterRepositories(id)
+  const changeTab = () => {
+    onChangeActiveTabId(id)
   }
 
   return (
-    <li className="filter-item">
-      <button
-        type="button"
-        className={changeClass}
-        onClick={onClickedFilterItem}
-      >
+    <li>
+      <button type="button" className={headerActive} onClick={changeTab}>
         {language}
       </button>
     </li>
