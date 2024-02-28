@@ -2,7 +2,7 @@ import './index.css'
 
 const RepositoryItem = props => {
   const {repoDetails} = props
-  const {name, issuesCount, forksCount, starsCount, avatarUrl}
+  const {name, issuesCount, forksCount, starsCount, avatarUrl} = repoDetails
 
   return (
     <li className="repo-item">
