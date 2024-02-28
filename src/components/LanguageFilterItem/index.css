@@ -1,1 +1,21 @@
-/* Write your CSS here */
+.filter-item {
+  list-style-type: none;
+}
+
+.not-selected {
+  background-color: transparent;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.selected {
+  background-color: transparent;
+  border: solid 2px #0284c7;
+  border-radius: 11px;
+  padding: 2px 9px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0284c7;
+}
